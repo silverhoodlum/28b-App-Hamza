@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maturity Radar Demo</title>
+  </head>
+  <body>
+    <div id="microservices"></div>
+    <script src="radar.js"></script>
+    <script>
+      radar.show('#microservices', {
+        size: 700,
+        curve: false,
+        metrics: [
+          {
+            name: "Metric 1",
+            range: [
+              "Value 0",
+              "Value 1",
+              "Value 2",
+              "Value 3"
+            ],
+            target: 2,
+            actual: 1
+          },
+          {
+            name: "Metric 2",
+            range: [
+              "Value 0",
+              "Value 1",
+              "Value 2",
+              "Value 3"
+            ],
+            target: 3,
+            actual: 2
+          },
+          {
+            name: "Metric 3",
+            range: [
+              "Value 0",
+              "Value 1",
+              "Value 2",
+              "Value 3"
+            ],
+            target: 2,
+            actual: 0
+          },
+          {
+            name: "Metric 4",
+            range: [
+              "Value 0",
+              "Value 1",
+              "Value 2",
+              "Value 3"
+            ],
+            target: 3,
+            actual: 2
+          },
+          {
+            name: "Metric 5",
+            range: [
+              "Value 0",
+              "Value 1",
+              "Value 2",
+              "Value 3"
+            ],
+            target: 2,
+            actual: 1
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>

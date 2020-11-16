@@ -1,0 +1,975 @@
+body{
+    background-color:#fff; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* NavBar */
+
+.container{
+    max-width: 100%;
+}
+nav{
+    width:100%;
+    background-color: #292932;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.navbar{
+    color: #fff;
+    background-color: #292932;  
+}
+
+.navbar dl{
+    padding: 0 0 0 5%;
+}
+.navbar dl dt:nth-child(1){
+    padding: 0;
+}
+
+.navbar dl dt{
+    padding: 5% 0 2%;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #8b8b8b;
+    letter-spacing: 1.5px;
+}
+
+.navbar dl dd{
+    font-size: 1rem;
+    padding: 1% 0;
+    letter-spacing: 1.1px;
+}
+
+.navbar dl dd:hover{
+    color: #171717;
+    cursor: pointer;
+}
+
+.navbar-collapse{
+    text-align: start;
+    margin-top: 0.1%;
+    padding: 16px 0;
+    color: #fff;
+    background-color: #292932;
+    width: 100%;
+}
+
+.navbar-toggler{
+    margin: 4% 0% 0% 3%;
+}
+ .active{
+        background-color: #575757;
+        } 
+
+/* main container */
+
+.label{
+    font-weight: 500;
+    letter-spacing: .8px;
+}
+
+.main-container{
+    margin-top: 86px;
+    padding: 0 24px;
+}
+
+.main-container dl ul {
+    padding: 0;
+}
+
+.main-container dl ul li {
+    list-style: none;
+}
+
+.main-container dl dt, .main-container dl dd {
+    list-style: none;
+    margin: 2% 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.main-container h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 40% 0 15% 0;
+}
+
+/* Circle Info */
+
+#calls-info-wrapper{
+    position: relative;
+    margin: 5% 0 16%;;
+}
+
+#calls-info-wrapper p{
+    text-align: start;
+}
+
+#circle-info{
+    width: 60%;
+    margin: 4% 0;
+}
+
+#calls-score{
+    position: absolute;
+    top: 46%;
+    left: 39%;
+}
+
+#calls-score p:nth-child(1){
+    font-size: 5rem;
+    line-height: 3rem
+}
+
+#calls-score p:nth-child(2){
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    margin-left: 1.3rem;
+    color: #8e8e8e;
+}
+
+#circle-info path:nth-child(2){
+        animation: dash 2s linear forwards;
+    }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*--Calls Upcoming--- */
+
+#container-upcoming-calls{
+    display: none;
+    padding-top:3%;
+}
+
+#container-upcoming-calls table{
+    border-top: 2px solid #000 ;
+    border-bottom: 1.5px solid #000;
+}
+
+#container-upcoming-calls table th{
+    padding: 10px 28px 10px 12px;
+    font-weight: 400;
+}
+#container-upcoming-calls table th:hover{
+    cursor: pointer;
+    background-color: #868686;
+}
+
+#container-upcoming-calls table td{
+    padding: 10px 18px 10px 12px;
+}
+
+/* --- Detailing --- */
+.detailing-container{
+    margin: 8% 0 0%;
+}
+
+.detailing-title p{
+    margin: 0 0 10%;
+}
+
+.detailing-title ul li{
+    margin: 1.8rem;
+    list-style: none;
+    font-size: 1rem;
+}
+.detailing-title ul li span{
+    margin-left: 1.2rem;
+}
+
+.diamond-shape{
+    background: #000;
+    height: 15px; width: 15px;
+    display: inline-block;
+    transform:rotate(45deg);
+}
+
+.detailing-title ul li:nth-child(1) .diamond-shape{
+    background: #4b59ff;
+}
+.detailing-title ul li:nth-child(2) .diamond-shape{
+    background: #33efe7;
+}
+.detailing-title ul li:nth-child(3) .diamond-shape{
+    background: #d9ef33;
+}
+.detailing-title ul li:nth-child(4) .diamond-shape{
+    background: #ef3333;
+}
+.detailing-title ul li:nth-child(5) .diamond-shape{
+    background: #a05bc4;
+}
+.detailing-title ul li:nth-child(6) .diamond-shape{
+    background: #a8a8a8;
+}
+
+/* --- Detailing  Table --- */
+
+.chart-container{
+    margin: 10% 0 15%;
+}
+
+.chart-container table tr th{
+    padding: 3% 0;
+}
+
+.chart-container table tr td:nth-child(1){
+    border-radius: 5px 0 0 5px;
+}
+.chart-container table tr td:nth-child(6){
+    border-radius: 0 5px 5px 0;
+}
+
+/* Notes */
+
+.chart-container .notes{
+    font-size: 1rem;
+    text-align: center;
+}
+.chart-container .notes span{
+    padding: 3px 6px;
+    border-radius: 4px;
+    background-color: #fff;
+-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.59);
+-moz-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.59);
+box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.59);
+
+}
+
+/* --- Modal ---*/
+
+
+.modal .modal-header{
+    border: none;
+}
+
+.modal .modal-header h5{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.1rem;
+}
+
+/* --- Modal targets  ---*/
+
+
+#targets-modal{
+    margin-top: 20% ;
+}
+.modal-targets .table thead tr th{
+    font-size: .8rem;
+}
+
+.modal-targets .table thead tr{
+    text-align: start;
+}
+
+.modal-targets .table tbody tr th{
+    font-size: .8rem;
+}
+
+.modal-targets .table tbody tr td{
+    font-size: .9rem;
+}
+
+.modal-targets .table td, .modal-targets .table th{
+    padding: .75rem 0.5rem;
+}
+
+/* --- Modal Profiles  ---*/
+
+.modal-profiles h4{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400;
+}
+
+.modal-profiles .col-12 {
+    margin: 5% 0;
+}
+
+.modal-profiles .col-12 span{
+    font-style: italic;
+}
+
+/* Modal metrics */
+
+.modal-metrics .legend{
+    font-size: .8rem;
+    text-align: start;
+}
+
+.modal-metrics .diamond-shape{
+    height: 10px; width: 10px;
+    display: inline-block;
+    transform:rotate(45deg);
+}
+.modal-metrics .legend span{
+    margin: 0 7% 0 2%;
+}
+
+.modal-metrics .legend .diamond-shape:nth-of-type(1){
+        background: #6a6a6a;
+ 
+}
+.modal-metrics .legend .diamond-shape:nth-of-type(2){
+        background: #ffa700;
+}
+
+
+.modal-metrics .active{
+    background-color: #fff
+}
+
+.modal-metrics svg .circles .circle circle,.modal-metrics svg .circles .circle text{
+    stroke: #d8d8d8 !important;
+}
+
+.modal-metrics svg .axes .axis text {
+    fill: #000 !important;
+}
+
+.modal-metrics svg .overlay .axis circle{
+    fill: rgba(198, 198, 198, 0.42) !important;
+    fill-opacity: 100 !important;
+ 
+}
+
+.modal-metrics svg .axis line{
+    stroke: #9a9898 !important;
+}
+
+.modal-metrics svg .data .shape:nth-child(2) path, .modal-metrics svg .data .shape:nth-child(2) circle{
+    fill: #ffa700 !important;
+    stroke: #d48b00 !important;
+}
+.modal-metrics svg .data .shape:nth-child(1) path, .modal-metrics svg .data .shape:nth-child(1) circle{
+    fill: #6a6a6a !important;
+    stroke: #5a5a5a !important;
+}
+
+.modal-metrics .modal-footer ul li a{
+    font-size: 1rem;
+    padding: 8px 12px;
+}
+
+.modal-metrics ul {
+    border: none;
+    border-top: 1px solid #d3d2d2;
+    background-color: #f8f4e5
+}
+
+.modal-metrics ul .nav-item .active{
+    border: none;
+    border-top: 3px solid #f77b00;
+    border-radius: 0;
+    background-color: #cccccc
+}
+
+.modal-metrics .modal-footer{
+    border: none;
+    padding: 0;
+    width: 100%
+}
+
+.modal-metrics .modal-footer ul{
+    width: 100%;
+}
+
+/* Next Previous Buttons */
+
+#next-wrapper{
+    text-align: center;
+    margin: 3% 8%;
+}
+
+#next-wrapper button{
+    margin: 0 4%;
+}
+
+/*----------------------------------- Medium -----------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+@media (min-width: 768px){
+        .navbar{
+            padding: 16px;
+        }
+        .navbar-toggler{
+            margin: 0% 0% 0% 3%;
+        }
+   
+        
+        /*---Main Container ---*/
+        
+        .main-container{
+            margin-top: 86px;
+            padding: 32px;
+            height: 100%
+        }
+        
+        .main-container h2{
+            margin: 0% 0 2% 0;
+            font-size: 1.6rem;
+        }
+        
+        .main-container .label{
+            font-size: 1.2rem;
+        }
+        .main-container dl dd{
+            font-size: 1.2rem
+        }
+        
+        
+        #calls-info-wrapper{
+            margin: 0;
+        }
+        
+        #circle-info{
+            width: 55%;
+        }
+        #calls-score p:nth-child(1){
+            line-height: 2.4rem
+        }
+
+        #calls-score p:nth-child(2){
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            margin-left: 1.6rem;
+            color: #8e8e8e;
+        }
+
+        
+        /* Detailing List */
+        
+        .detailing-container{
+            margin: 6% 0 0;
+        }
+        .detailing-container .col-12{
+            padding: 0;
+        }    
+    
+        .detailing-title ul{
+            padding: 0;
+        }
+        
+        .detailing-title p{
+            margin: 0 0 3%;
+        }
+        
+        .detailing-title ul li{
+            display: inline-block;
+            margin: 0% 0.6%;
+            font-size: 1.1rem;
+            line-height: 1rem;
+            padding: 4px;
+        }
+        .diamond-shape{
+            margin: 0;
+        }    
+    
+        .detailing-title ul li span{
+            margin-left: .8rem
+        } 
+        
+        .detailing-title ul li:nth-child(1) {
+            margin-left: .1rem;
+        }
+        
+        /* --- Detailing  Table --- */
+
+        .chart-container{
+            margin: 0% 0 0%;
+        }
+        
+        .chart-container table tr th{
+            padding: 1.5% 0;
+            font-size: 1.2rem;
+        }
+    
+        /* --- Modal --- */
+    
+    .modal-dialog{
+        max-width: 80%;
+    }
+    
+    .modal-content{
+        padding: 10px 20px;
+    }
+    
+    .modal-dialog .modal-header h5{
+        font-size: 1.2rem;
+        padding: 5% 0;
+    }
+    
+        
+    /* --- Modal targets  ---*/
+
+
+    #targets-modal{
+        margin-top: 5%;
+    }
+    
+
+    .modal-targets .table thead tr th{
+        font-size: 1rem;
+    }
+
+    .modal-targets .table thead tr{
+        text-align: start;
+    }
+
+    .modal-targets .table tbody tr th{
+        font-size: 1rem;
+    }
+
+    .modal-targets .table tbody tr td{
+        font-size: 1rem;
+    }
+
+    .modal-targets .table td, .modal-targets .table th{
+        padding: 1.25rem 0.5rem;
+    }
+    /* --- Modal Profiles  ---*/
+
+    .modal-profiles h4{
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 400;
+        margin: 0 0 15%;
+    }
+    
+    .modal-profiles p{
+        margin: 15% 0;
+    }
+    
+    .modal-profiles .col-12{
+        margin: 0 0 2%;
+    }
+    
+    
+}
+
+/*----------------------------------- Large -----------------------------------*/
+/*-------------------------------------------------------------------------------*/
+    
+    @media (min-width: 992px) { 
+        /* Navbar*/
+        nav{
+            width: 22%;
+            height: 100%;
+            flex-flow: column nowrap !important;
+        }
+        .navbar{
+            align-items: flex-start;
+            padding: 0 0 0 0;
+        }
+        .navbar dl{
+            padding: 18% 0;
+            height: 100%;
+            margin: 5% 0;
+            width: 100%;
+        }
+        .navbar dl dt:nth-child(1){
+            padding: 0 0 2% 15%;
+        }
+
+        .navbar dl dt{
+            padding: 20% 0 10% 15%;
+            font-size: .8rem;
+            font-weight: 500;
+            color: #8b8b8b;
+        }
+
+        .navbar dl dd{
+            font-size: .95rem;
+            padding: 3% 0 3% 15%;
+        }
+        .navbar dl dd:nth-of-type(1){
+            padding: 3% 0 3% 15%;
+        }
+          
+        
+        /*---Main Container ---*/
+        
+        .main-container{
+            width: 75%;
+            position: absolute;
+            right: 0;
+            padding: 3.5% 4% 3.5% 0.5%;
+            margin: 0;
+            height: 100%;
+        }
+        
+        .main-container .label{
+            font-size: 1rem;
+        }
+        .main-container dl dd{
+            font-size: 1rem
+        }
+        .main-container h2{
+            margin: 0% 0 2.5% 0;
+            font-size: 1.6rem;
+        }
+        
+        /* Calls Info */
+        
+        #calls-info-wrapper{
+            margin: 0;
+        }
+        
+        #circle-info{
+            width: 55%;
+        }
+        #calls-score p:nth-child(1){
+            line-height: 2.4rem
+        }
+
+        #calls-score p:nth-child(2){
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            margin-left: 1.6rem;
+            color: #8e8e8e;
+        }
+        
+        #container-upcoming-calls table th{
+            padding: 10px 18px 10px 12px;
+            font-weight: 400;
+        }
+        
+        /* Detailing List */
+        
+        .detailing-container{
+            margin: 1.5% 0 0;
+        }
+        
+        .detailing-title ul{
+            padding: 0;
+            margin-bottom: 1%;
+        }
+        
+        .detailing-title p{
+            margin: 0 0 3%;
+        }
+        
+        .detailing-title ul li{
+            display: inline-block;
+            margin: 0 1.4%;
+            font-size: .9rem;
+        }
+        
+        .detailing-title ul li span{
+            margin-left: .8rem
+        } 
+        
+        .detailing-title ul li:nth-child(1) {
+            margin-left: .1rem;
+        }
+        .diamond-shape{
+            background: #000;
+            height: 12px; width: 12px;
+        }
+        /* --- Detailing  Table --- */
+
+        .chart-container{
+            margin: 0%;
+        }
+        
+        .chart-container table tr{
+            height: 18px !important;
+        }
+
+        .chart-container table tr th{
+            padding: 1.1% 0;
+            font-size: .9rem;
+        }
+        
+        /*  Modal */
+        .modal .modal-header .close{
+            font-size: 2.5rem ;
+            padding: 0;
+        }
+        .modal-metrics .legend{
+            font-size: 1rem;
+            text-align: start;
+        }
+
+        .modal-metrics .diamond-shape{
+            height: 13px; width: 13px;
+            display: inline-block;
+            transform:rotate(45deg);
+        }
+        .modal-metrics .legend span{
+            margin: 0 3% 0 2%;
+        }
+        .modal svg{
+           transform: scale(1.3);
+            height: 400px;
+            padding-top: 30px;
+        }
+
+    }
+
+/*---------------------------------Large Ipad Air -----------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+@media (min-width: 1100px) { 
+        .chart-container table tr th{
+            padding: 1.6% 0;
+            font-size: .9rem;
+        }
+}
+
+/*--------------------------------- X Large Laptop -----------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+ @media (min-width: 1200px) { 
+        /* Navbar*/
+        nav{
+            width: 22%;
+            height: 100%;
+            flex-flow: column nowrap !important;
+        }
+        .navbar{
+            align-items: flex-start;
+            padding: 0 0 0 0;
+        }
+        .navbar dl{
+            padding: 18% 0;
+            height: 100%;
+            margin: 5% 0;
+            width: 100%;
+        }
+        .navbar dl dt:nth-child(1){
+            padding: 0 0 2% 15%;
+        }
+
+        .navbar dl dt{
+            padding: 15% 0 8% 15%;
+            font-size: .8rem;
+            font-weight: 500;
+            color: #8b8b8b;
+        }
+
+        .navbar dl dd{
+            font-size: .95rem;
+            padding: 2% 0 2% 15%;
+        }
+        .navbar dl dd:nth-of-type(1){
+            padding: 3% 0 3% 15%;
+        }
+          
+        
+        /*---Main Container ---*/
+        
+        .main-container dl dt, .main-container dl dd {
+            list-style: none;
+            margin: 1% 0;
+        }
+        .main-container dl dd{
+            font-size: 1rem
+        }
+        .main-container h2{
+            margin: 0% 0 2.2% 0;
+            font-size: 1.6rem;
+        }
+        
+        #calls-info-wrapper{
+            margin: 0;
+        }
+        
+        #circle-info{
+            width: 45%;
+            margin: 0;
+        }
+
+
+        
+        /* Detailing List */
+        
+        .detailing-container{
+            margin: 1% 0 0;
+        }
+        
+        .detailing-title ul{
+            padding: 0;
+            margin-bottom: 1%;
+        }
+        
+        .detailing-title p{
+            margin: 0 0 1%;
+        }
+        
+
+        /* --- Detailing  Table --- */
+
+        .chart-container{
+            margin: 0% 0 0%;
+        }
+        
+        .chart-container table tr{
+            height: 18px !important;
+        }
+
+        .chart-container table tr th{
+            padding: 1% 0;
+            font-size: .9rem;
+        }
+        
+
+    /*--Calls Upcoming--- */
+
+    #container-upcoming-calls{
+        display: none;
+        padding-top:2%;
+        font-size: 1rem
+    }
+     #calls-score{
+        position: absolute;
+        top: 46%;
+        left: 41%;
+     }
+
+    }
+
+/*--------------------------------- X Large Laptop -----------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+ @media (min-width: 1800px) { 
+     
+        /* Navbar*/
+        nav{
+            width: 22%;
+            height: 100%;
+            flex-flow: column nowrap !important;
+        }
+        .navbar{
+            align-items: flex-start;
+            padding: 0 0 0 0;
+        }
+        .navbar dl{
+            padding: 18% 0;
+            height: 100%;
+            margin: 5% 0;
+            width: 100%;
+        }
+        .navbar dl dt:nth-child(1){
+            padding: 0 0 2% 15%;
+        }
+
+        .navbar dl dt{
+            padding: 15% 0 8% 15%;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #8b8b8b;
+        }
+
+        .navbar dl dd{
+            font-size: 1.2rem;
+            padding: 2% 0 2% 15%;
+        }
+        .navbar dl dd:nth-of-type(1){
+            padding: 3% 0 3% 15%;
+        }
+          
+        
+        /*---Main Container ---*/
+        .main-container .label{
+            font-size: 1.3rem;
+        }
+        .main-container dl dt, .main-container dl dd {
+            list-style: none;
+            margin: 2% 0;
+        }
+        .main-container dl dd{
+            font-size: 1.3rem
+        }
+        .main-container h2{
+            margin: 0% 0 2.2% 0;
+            font-size: 2rem;
+        }
+        
+        /* Calls Info */
+     
+        #calls-info-wrapper{
+            margin: 0;
+        }
+        
+        #circle-info{
+            width: 45%;
+            margin: 0;
+        }
+
+        #calls-score{
+            top: 38%;
+            left: 41.5%;
+     }
+        #calls-score p:nth-child(1){
+            line-height: 4.5rem;
+            font-size: 6.5rem;
+        }
+
+        #calls-score p:nth-child(2){
+            font-size: 1.8rem;
+            line-height: 1.6rem;
+            margin-left: 2.6rem;
+
+        }
+
+        
+        /* Detailing List */
+        
+        .detailing-container{
+            margin: 1% 0 0;
+            
+        }
+        
+        .detailing-title ul{
+            padding: 0;
+            margin-bottom: 1%;
+            
+        }
+         .detailing-title ul li{
+             font-size: 1.2rem;
+         }
+        
+        .detailing-title p{
+            margin: 0 0 1%;
+        }
+        
+
+        /* --- Detailing  Table --- */
+
+        .chart-container{
+            margin: 0% 0 0%;
+        }
+        
+        .chart-container table tr{
+            height: 18px !important;
+        }
+
+        .chart-container table tr th{
+            padding: 1.2% 0;
+            font-size: 1.2rem;
+        }
+        
+        /* Notes */
+
+         .chart-container .notes{
+            font-size: 1.2rem;
+         }
+        /*--Calls Upcoming--- */
+
+        #container-upcoming-calls{
+            display: none;
+            padding-top:2%;
+            font-size: 1rem
+        }  
+}
+
